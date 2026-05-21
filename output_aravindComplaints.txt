@@ -1,0 +1,59 @@
+# Nmap 7.98 scan initiated Tue Feb 17 17:46:28 2026 as: nmap -sV -oN D:\\SmartTodoFullStack\\output_aravindComplaints.txt -oX C:\\Users\\intern16\\AppData\\Local\\Temp\\zenmap-pc5w2cm8.xml -oN D:\\SmartTodoFullStack\\output_nmap_aravindComplaints.txt -oN D:\\SmartTodoFullStack\\output_nmap_aravindComplaints.txt -oN D:\\SmartTodoFullStack\\output_nmap_aravindComplaints.txt -oN D:\\SmartTodoFullStack\\output_nmap_aravindComplaints.txt -oN D:\\SmartTodoFullStack\\output_nmap_aravindComplaints.txt -oN D:\\SmartTodoFullStack\\output_nmap_aravindComplaints.txt -oN D:\\SmartTodoFullStack\\output_nmap_aravindComplaints.txt -oN D:\\SmartTodoFullStack\\output_nmap_aravindComplaints.txt -oN D:\\SmartTodoFullStack\\output_nmap_aravindComplaints.txt -oN D:\\SmartTodoFullStack\\output_nmap_aravindComplaints.txt -oN D:\\SmartTodoFullStack\\output_nmap_aravindComplaints.txt -oN D:\\SmartTodoFullStack\\output_nmap_aravindComplaints.txt -oN D:\\SmartTodoFullStack\\output_nmap_aravindComplaints.txt -oN D:\\SmartTodoFullStack\\output_nmap_aravindComplaints.txt -oN D:\\SmartTodoFullStack\\output_nmaparavindComplaints.txt -oN D:\\SmartTodoFullStack\\output_nmap-aravindComplaints.txt -oN D:\\SmartTodoFullStack\\output_nmaparavindComplaints.txt -oN D:\\SmartTodoFullStack\\output_nmaaravindComplaints.txt -oN D:\\SmartTodoFullStack\\outNmap scan report for aravindcomplaints.aravind.org (65.0.221.204)
+Host is up (0.033s latency).
+rDNS record for 65.0.221.204: ec2-65-0-221-204.ap-south-1.compute.amazonaws.com
+Not shown: 989 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+22/tcp   open   ssh            OpenSSH 9.6p1 Ubuntu 3ubuntu13.11 (Ubuntu Linux; protocol 2.0)
+80/tcp   open   http           nginx 1.24.0 (Ubuntu)
+443/tcp  open   ssNmap scan report for aravindcomplaints.aravind.org (65.0.221.204)
+Host is up (0.033s latency).
+rDNS record for 65.0.221.204: ec2-65-0-221-204.ap-south-1.compute.amazonaws.com
+Not shown: 989 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+22/tcp   open   ssh            OpenSSH 9.6p1 Ubuntu 3ubuntu13.11 (Ubuntu Linux; protocol 2.0)
+80/tcp   open   http           nginx 1.24.0 (Ubuntu)
+443/tcp  open   ssl/http       nginx 1.24.0 (Ubuntu)
+5000/tcp open   upnp?
+5001/tcp open   http           Uvicorn
+5002/tcp open   http           Werkzeug httpd 3.1.3 (Python 3.12.3)
+5003/tcp open   http           Gunicorn
+5004/tcp open   http           Gunicorn
+8000/tcp closed http-alt
+8001/tcp open   http           Uvicorn
+8002/tcp closed teradataordbms
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port5000-TCP:V=7.98%I=7%D=2/17%Time=69945C2A%P=i686-pc-windows-windows%
+SF:r(GenericLines,73,"HTTP/1\.1\x20400\x20\r\ncontent-length:\x200\r\nconn
+SF:ection:\x20close\r\ndate:\x20Tue,\x2017\x20Feb\x202026\x2012:16:42\x20G
+SF:MT\r\nserver:\x20hypercorn-h11\r\n\r\n")%r(GetRequest,176,"HTTP/1\.1\x2
+SF:0302\x20\r\ncontent-type:\x20text/html;\x20charset=utf-8\r\ncontent-len
+SF:gth:\x20199\r\nlocation:\x20/login\r\ndate:\x20Tue,\x2017\x20Feb\x20202
+SF:6\x2012:16:42\x20GMT\r\nserver:\x20hypercorn-h11\r\nConnection:\x20clos
+SF:e\r\n\r\n<!doctype\x20html>\n<html\x20lang=en>\n<title>Redirecting\.\.\
+SF:.</title>\n<h1>Redirecting\.\.\.</h1>\n<p>You\x20should\x20be\x20redire
+SF:cted\x20automatically\x20to\x20the\x20target\x20URL:\x20<a\x20href=\"/l
+SF:ogin\">/login</a>\.\x20If\x20not,\x20click\x20the\x20link\.\n")%r(RTSPR
+SF:equest,73,"HTTP/1\.1\x20400\x20\r\ncontent-length:\x200\r\nconnection:\
+SF:x20close\r\ndate:\x20Tue,\x2017\x20Feb\x202026\x2012:16:42\x20GMT\r\nse
+SF:rver:\x20hypercorn-h11\r\n\r\n")%r(DNSVersionBindReqTCP,73,"HTTP/1\.1\x
+SF:20400\x20\r\ncontent-length:\x200\r\nconnection:\x20close\r\ndate:\x20T
+SF:ue,\x2017\x20Feb\x202026\x2012:16:42\x20GMT\r\nserver:\x20hypercorn-h11
+SF:\r\n\r\n")%r(SMBProgNeg,73,"HTTP/1\.1\x20400\x20\r\ncontent-length:\x20
+SF:0\r\nconnection:\x20close\r\ndate:\x20Tue,\x2017\x20Feb\x202026\x2012:1
+SF:6:43\x20GMT\r\nserver:\x20hypercorn-h11\r\n\r\n")%r(ZendJavaBridge,73,"
+SF:HTTP/1\.1\x20400\x20\r\ncontent-length:\x200\r\nconnection:\x20close\r\
+SF:ndate:\x20Tue,\x2017\x20Feb\x202026\x2012:16:43\x20GMT\r\nserver:\x20hy
+SF:percorn-h11\r\n\r\n")%r(HTTPOptions,B6,"HTTP/1\.1\x20200\x20\r\ncontent
+SF:-type:\x20text/html;\x20charset=utf-8\r\nallow:\x20OPTIONS,\x20GET,\x20
+SF:HEAD\r\ncontent-length:\x200\r\ndate:\x20Tue,\x2017\x20Feb\x202026\x201
+SF:2:16:43\x20GMT\r\nserver:\x20hypercorn-h11\r\nConnection:\x20close\r\n\
+SF:r\n")%r(DNSStatusRequestTCP,73,"HTTP/1\.1\x20400\x20\r\ncontent-length:
+SF:\x200\r\nconnection:\x20close\r\ndate:\x20Tue,\x2017\x20Feb\x202026\x20
+SF:12:16:48\x20GMT\r\nserver:\x20hypercorn-h11\r\n\r\n")%r(SSLSessionReq,7
+SF:3,"HTTP/1\.1\x20400\x20\r\ncontent-length:\x200\r\nconnection:\x20close
+SF:\r\ndate:\x20Tue,\x2017\x20Feb\x202026\x2012:16:53\x20GMT\r\nserver:\x2
+SF:0hypercorn-h11\r\n\r\n");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Feb 17 17:47:35 2026 -- 1 IP address (1 host up) scanned in 67.34 seconds

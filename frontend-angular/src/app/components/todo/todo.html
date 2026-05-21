@@ -1,0 +1,82 @@
+<div class="container mt-5">
+  <h2 class="mb-4">Smart Todo List</h2>
+
+  <form (submit)="addTodo(); $event.preventDefault()" class="mb-4">
+
+    <input
+      type="text"
+      [(ngModel)]="newTodo.title"
+      name="title"
+      placeholder="Title"
+      class="form-control mb-2"
+      required
+    >
+
+    <textarea
+      [(ngModel)]="newTodo.description"
+      name="description"
+      placeholder="Description"
+      class="form-control mb-2"
+    ></textarea>
+
+    <select
+      [(ngModel)]="newTodo.priority"
+      name="priority"
+      class="form-select mb-2"
+    >
+      <option value="Low">Low</option>
+      <option value="Medium">Medium</option>
+      <option value="High">High</option>
+    </select>
+
+    <input
+      type="date"
+      [(ngModel)]="newTodo.dueDate"
+      name="dueDate"
+      class="form-control mb-2"
+    >
+
+    <button class="btn btn-primary w-100">
+      Add Todo
+    </button>
+
+  </form>
+
+  <ul class="list-group">
+
+    <li
+      class="list-group-item"
+      *ngFor="let todo of todos"
+    >
+
+      <div class="d-flex justify-content-between align-items-center">
+
+        <div>
+          <input
+            type="checkbox"
+            [(ngModel)]="todo.completed"
+            (change)="updateTodo(todo)"
+            class="form-check-input me-2"
+          >
+
+          <strong>{{ todo.title }}</strong>
+          <div>{{ todo.description }}</div>
+          <small>
+            Priority: {{ todo.priority }} |
+            Due: {{ todo.dueDate }}
+          </small>
+        </div>
+
+        <button
+          class="btn btn-danger btn-sm"
+          (click)="deleteTodo(todo.id)"
+        >
+          Delete
+        </button>
+
+      </div>
+
+    </li>
+
+  </ul>
+</div>

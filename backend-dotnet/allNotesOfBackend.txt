@@ -1,0 +1,110 @@
+1. Folders
+bin
+
+What it is: Short for "binary."
+Purpose: This is where your compiled app lives after building it.
+Why it exists: When you run or build your project, .NET transforms your code into an executable form (.dll files) and puts it here so it can run.
+Example: After building, you'll see backend-dotnet.dll in bin\Debug\net7.0\.
+
+Controllers
+
+What it is: Holds all the controller files.
+
+Purpose: Controllers handle incoming HTTP requests (like GET, POST, PUT, DELETE) and decide what to do with them.
+
+Example: TodoController.cs handles all requests related to your Todo items—like listing todos, creating a new todo, updating, or deleting a todo.
+
+Data
+
+What it is: Contains the database context file.
+
+Purpose: Acts as a bridge between your app and the database. It tells your app how to store and fetch data.
+
+Example: AppDbContext.cs defines a table for your Todos so the app knows how to save or read Todo items.
+
+Models
+
+What it is: Contains the data structure or blueprint for your objects.
+
+Purpose: Models define what a piece of data looks like.
+
+Example: Todo.cs has properties like Id, Title, IsDone. This is like a blueprint of a Todo item.
+
+obj
+
+What it is: Short for "object."
+
+Purpose: Temporary files used by the compiler.
+
+Why it exists: The compiler uses it to speed up the build process. You usually don’t touch anything here.
+
+Properties
+
+What it is: Holds project settings.
+
+Example: launchSettings.json stores how the app should run locally (like which port to use).
+
+Purpose: Tells Visual Studio or dotnet CLI how to launch the project during development.
+
+2. Files
+appsettings.json & appsettings.Development.json
+
+Purpose: Configuration files for your app.
+
+Example: Connection strings to your database, logging settings, API keys.
+
+Why two files?
+
+appsettings.json → Default settings for production.
+
+appsettings.Development.json → Overrides settings when running in development mode.
+
+backend-dotnet.csproj
+
+Purpose: The project file.
+
+Why it exists: It tells .NET:
+
+What frameworks you are using
+
+Which dependencies (NuGet packages) your project needs
+
+How to build the project
+
+backend-dotnet.http
+
+Purpose: A file often used for testing API requests inside Visual Studio.
+
+Example: You can write GET, POST, DELETE requests here and run them directly without Postman.
+
+Program.cs
+
+Purpose: Entry point of your app.
+
+Why it exists: This is where your app starts running, sets up routing, database, and middleware.
+
+In simple words: Think of it as the main control room that connects everything: controllers, models, database, and HTTP pipeline.
+
+Other files in obj
+
+Files like project.assets.json, *.nuget.g.proj, etc., are temporary or cache files used by .NET to manage dependencies and build faster.
+
+You usually don’t touch them.
+
+Summary in one sentence:
+
+Models → define your data
+
+Data → talks to the database
+
+Controllers → handle incoming requests
+
+Program.cs → starts the app
+
+appsettings.json → configuration
+
+bin/obj → build outputs & temporary files
+
+Properties → project launch settings
+
+.csproj → tells .NET what the project is and what it needs

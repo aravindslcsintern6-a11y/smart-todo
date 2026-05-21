@@ -1,0 +1,30 @@
+/* FULL PAGE ANIMATED VIOLET → PINK BACKGROUND */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    -45deg,
+    #064b74,   /* Dark Violet */
+    #2b7ae2,   /* Violet */
+    #1884c2,   /* Dark Pink */
+    #23a6b8,   /* Pink */
+    #39e2d4,   /* Light Pink */
+    #88f0f0    /* Baby Pink */
+  );
+  background-size: 400% 400%;
+  animation: outerGradient 14s ease infinite;
+
+  padding: 60px 0;
+}
+
+/* Smooth flowing animation */
+@keyframes outerGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
